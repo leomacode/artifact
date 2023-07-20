@@ -19,9 +19,10 @@ jobs:
         uses: actions/upload-artifact@v3
         with: 
           name: upload dist
-          path: |
-           dist
-           package.json
+          path: dist
+          # path: |
+          #  dist
+          #  package.json
   build:
     needs: test
     runs-on: ubuntu-latest
